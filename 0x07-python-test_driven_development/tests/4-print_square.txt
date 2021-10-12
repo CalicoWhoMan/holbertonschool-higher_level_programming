@@ -1,0 +1,1 @@
+Test txt for 4-print_square.py, tests/4-print_square.txt
