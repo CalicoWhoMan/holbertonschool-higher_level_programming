@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 This program writes a class called Rectangle
 that defines a rectangle by width and height
