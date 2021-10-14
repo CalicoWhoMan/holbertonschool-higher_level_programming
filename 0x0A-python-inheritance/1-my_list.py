@@ -4,9 +4,9 @@ Class called MyList that inherits from List
 F -- def print_sorted(self)
 """
 
-
-def print_sorted(self):
+class MyList(list)
     """
     Printed List in ascending sorted order
     """
-    print(sorted(self))
+    def print_sorted(self):
+        print(sorted(self))
