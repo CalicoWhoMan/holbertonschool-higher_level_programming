@@ -8,4 +8,7 @@ returns a list
 
 
 def lookup(obj):
+    """
+    Returns a list
+    """
     return dir(obj)
