@@ -11,7 +11,7 @@ class BaseGeometry:
 
     def area(self):
         """
-        Documentation my Documentation
+        Documentation for Exception"
         """
         raise Exception("area() is not implemented")
     
