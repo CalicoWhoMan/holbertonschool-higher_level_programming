@@ -13,4 +13,4 @@ def class_to_json(obj):
     """
     returns dict desc for json cerealization of obj
     """
-    return cars(obj)
+    return vars(obj)
