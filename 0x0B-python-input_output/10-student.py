@@ -30,7 +30,7 @@ class Student:
             return self.__dict__
             for varis in attrs:
                 if varis in self.__dict__:
-                    strs[key] = self.dict__dict__[key]
+                    strs[varis] = self.dict__dict__[varis]
             return strs
         else:
             return vars(self)
