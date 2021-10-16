@@ -27,10 +27,9 @@ class Student:
         
 
         if attrs is not None:
-            return self.__dict__
             for varis in attrs:
                 if varis in self.__dict__:
-                    strs[varis] = self.dict__dict__[varis]
+                    strs[varis] = self.__dict__[varis]
             return strs
         else:
             return vars(self)
