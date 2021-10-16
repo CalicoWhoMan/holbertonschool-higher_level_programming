@@ -1,4 +1,5 @@
-tudent = __import__('10-student').Student
+#!/usr/bin/python3
+Student = __import__('10-student').Student
 
 student_1 = Student("John", "Doe", 23)
 student_2 = Student("Bob", "Dylan", 27)
