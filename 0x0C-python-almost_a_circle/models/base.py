@@ -4,6 +4,9 @@ Class Base
 """
 
 
+import json
+
+
 class Base:
     """
     Class for file Base
@@ -17,3 +20,18 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+
+    @staticmethod
+    def from_json_string(json_string):
+
+    @classmethod
+    def create(cls, **dictionary):
+
+    @classmethod
+    def load_from_file(cls):
