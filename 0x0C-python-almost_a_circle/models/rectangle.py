@@ -86,3 +86,13 @@ class Rectangle(Base):
         if args and args[0] is not None:
             for rang in range(len(args)):
                 setattr(self, a_list[rang], args[rang])
+
+    def to_dictionary(self):
+        the_dict = {}
+
+        the_dict['id'] = self.id
+        the_dict['width'] = self.width
+        the_dict['height'] = self.height
+        the_dict['x'] = self.__x
+        the_dict['y'] = self.__y
+        return the_dict
