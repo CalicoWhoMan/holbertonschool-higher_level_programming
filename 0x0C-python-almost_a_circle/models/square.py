@@ -40,3 +40,28 @@ class Square(Rectangle):
         """
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        assigns attributes to Square class
+        """
+        list2 = ["id", "size", "x", "y"]
+        if args and args[0] is not None:
+            for rang2 in range(len(args)):
+                setattr(self, list2[rang2], args[rang2])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        returns dict repr of a Square
+        """
+        the_dict2 = {}
+
+        the_dict2['id'] = self.id
+        the_dict2['width'] = self.width
+        the_dict2['height'] = self.height
+        the_dict2['x'] = self.x
+        the_dict2['y'] = self.y
+        return the_dict2
