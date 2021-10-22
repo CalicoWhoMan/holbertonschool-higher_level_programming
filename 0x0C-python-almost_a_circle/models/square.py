@@ -8,9 +8,9 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-"""
-setting up class for square
-"""
+    """
+    setting up class for square
+    """
 
 
     def __init__(self, size, x=0, y=0, id=None):
