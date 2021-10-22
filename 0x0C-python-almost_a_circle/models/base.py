@@ -4,9 +4,6 @@ Class Base
 """
 
 
-import json
-
-
 class Base:
     """
     Class for file Base
@@ -15,9 +12,9 @@ class Base:
 
 
     def __init__(self, id=None):
-    """
-    initializing base
-    """
+        """
+        initializing base
+        """
         if id is not None:
             self.id = id
         else:
