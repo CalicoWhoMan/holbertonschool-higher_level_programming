@@ -9,33 +9,34 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
 """
-setting up class Square
+setting up class for square
 """
 
+
     def __init__(self, size, x=0, y=0, id=None):
-    """
-    init for Square
-    """
+        """
+        init for Square
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-    """
-    replacing the str method
-    """
+        """
+        replacing the str method
+        """
         return ("[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.width))
 
     @property
-    """
-    getter for size
-    """
     def size(self):
+        """
+        getter for size
+        """
         return self.width
 
     @size.setter
-    """
-    setter for size
-    """
     def size(self, value):
+        """
+        setter for size
+        """
         self.width = value
         self.height = value
