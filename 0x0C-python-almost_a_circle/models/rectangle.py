@@ -20,10 +20,12 @@ class Rectangle(Base):
         super().__init__(id)
 
     @property
+    """ getter for width """
     def width(self):
         return self.__width
 
     @width.setter
+    """ setter for width """
     def width(self, value):
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -32,10 +34,12 @@ class Rectangle(Base):
         self.__width = value
 
     @property
+    """ getter for height """
     def height(self):
         return self.__height
 
     @height.setter
+    """ setter for height """
     def height(self, value):
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -44,10 +48,12 @@ class Rectangle(Base):
         self.__height = value
 
     @property
+    """ getter for x """
     def x(self):
         return self.__x
 
     @x.setter
+    """ setter for x """
     def x(self, value):
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -56,10 +62,12 @@ class Rectangle(Base):
         self.__x = value
 
     @property
+    """ getter for y """
     def y(self):
         return self.__y
 
     @y.setter
+    """ setter for y """
     def y(self, value):
         if type(value) is not int:
             raise TypeError("y must be an integer")
@@ -68,9 +76,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+    """ Area for the rectangle """
         return self.__width * self.__height
 
     def display(self):
+    """ prints # characters """
         for horiz in range(self.__y):
             print("")
         for horiz in range(self.__height):
@@ -78,16 +88,19 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
+    """ overrides the str method """
         return("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+    """ assigns arg to each attr """
         a_list = ["id", "width", "height", "x", "y"]
         if args and args[0] is not None:
             for rang in range(len(args)):
                 setattr(self, a_list[rang], args[rang])
 
     def to_dictionary(self):
+    """ returns dictionarry rep """
         the_dict = {}
 
         the_dict['id'] = self.id
