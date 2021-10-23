@@ -30,7 +30,7 @@ class Base:
         """
         listdict2 = []
         if list_dictionaries is None or list_dictionaries == "":
-            return listdict2
+            return []
         else:
             listdict2 = json.dumps(list_dictionaries)
         return listdict2
