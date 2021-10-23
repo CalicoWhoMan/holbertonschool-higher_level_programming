@@ -3,7 +3,6 @@
 Write a class Student that defines a student by: (based on 9-student.py)
 """
 
-
 class Student:
     """
     class student student
@@ -21,7 +20,6 @@ class Student:
         """
         retrieves dictonary reps of student class
         """
-
         strs = {}        
 
         if attrs is not None:
