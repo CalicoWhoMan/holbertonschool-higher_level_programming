@@ -50,7 +50,7 @@ class Square(Rectangle):
                 setattr(self, list2[rang2], args[rang2])
         else:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                self.__setattr__( key, value)
 
     def to_dictionary(self):
         """
