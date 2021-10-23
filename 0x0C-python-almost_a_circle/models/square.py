@@ -3,7 +3,6 @@
 class Square inheriting class Rectangle/base
 """
 
-
 from models.rectangle import Rectangle
 
 class Square(Rectangle):
