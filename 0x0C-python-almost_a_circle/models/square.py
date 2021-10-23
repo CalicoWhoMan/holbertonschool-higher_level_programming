@@ -59,8 +59,7 @@ class Square(Rectangle):
         the_dict2 = {}
 
         the_dict2['id'] = self.id
-        the_dict2['width'] = self.width
-        the_dict2['height'] = self.height
+        the_dict2['size'] = self.size
         the_dict2['x'] = self.x
         the_dict2['y'] = self.y
         return the_dict2
