@@ -22,9 +22,7 @@ class Student:
         retrieves dictonary reps of student class
         """
 
-
-        strs = {}
-        
+        strs = {}        
 
         if attrs is not None:
             for varis in attrs:
