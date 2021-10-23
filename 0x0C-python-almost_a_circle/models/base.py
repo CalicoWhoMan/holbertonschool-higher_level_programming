@@ -61,8 +61,15 @@ class Base:
         CM that returns an instance with all attributes already set
         """
         if cls.__name__ == "Rectangle":
-            same = cls(1, 1)
+            same = cls(1, 1, 0)
         elif cls.__name__ == "Square":
-            same = cls(1)
+            same = cls(1, 0)
         same.update(**dictionary)
         return same
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        returns a list of instances
+        """
+        
