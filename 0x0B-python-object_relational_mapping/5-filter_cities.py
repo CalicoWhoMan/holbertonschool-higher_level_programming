@@ -7,7 +7,7 @@ if __name__ == '__main__':
     import sys
 
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
-                    passwd=sys.argv[2], database=sys.argv[3])
+                         passwd=sys.argv[2], database=sys.argv[3])
     mem = db.cursor()
     mem.execute("""SELECT cities.name FROM states
     JOIN cities ON cities.state_id = states.id WHERE states.name = '{}'
