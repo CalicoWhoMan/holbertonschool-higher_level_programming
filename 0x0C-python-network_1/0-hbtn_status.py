@@ -3,6 +3,7 @@
 
 import urllib.request
 
-x = urllib.request.urlopen('https://intranet.hbtn.io/status')
-print(x.read())
-# with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+if __name__ == "__main__":
+    url = 'https://intranet.hbtn.io/status'
+    with urllib.request.urlopen(url) as response:
+        print(response.read())
