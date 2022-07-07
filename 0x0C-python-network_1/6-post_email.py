@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Script Script"""
-
-import urllib.request
-import urllib.parse
-import sys
-
+"""POST an email using URL and email"""
 if __name__ == "__main__":
+    import requests
+    import sys
+    email = sys.argv[2]
+    value = {"email": email}
+    r = requests.post(sys.argv[1], value)
+    print(r.text)
