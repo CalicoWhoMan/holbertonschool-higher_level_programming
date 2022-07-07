@@ -2,7 +2,7 @@
 """Takes URL and email; sends POSTS req to URL  with email as param"""
 if __name__ == "__main__":
     import sys
-    import urllib    
+    import urllib
     from sys import argv
     from urllib import request, parse
     url = argv[1]
